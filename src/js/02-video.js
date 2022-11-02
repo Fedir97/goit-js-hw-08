@@ -9,7 +9,7 @@ import throttle from 'lodash.throttle';
     }
     
   
-    
+    if(localStorage.length > 0){
 player.on('loaded', () => {
   player.setCurrentTime(localStorage.getItem('videoplayer-current-time'));
-});
+});}
